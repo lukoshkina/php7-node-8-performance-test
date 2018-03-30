@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 function isSimple(int $number) : bool {
-    $limit = floor($number / 2);
+    $limit = floor(sqrt($number));
     for ($i = 2; $i <= $limit; $i++) {
         if ($number % $i === 0) {
             return false;
